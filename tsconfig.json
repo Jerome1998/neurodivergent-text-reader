@@ -1,0 +1,45 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "typeRoots": [ "node_modules/@types" ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": false,
+    "jsx": "react-jsx",
+    "sourceMap": false,
+    "baseUrl": "src",
+    "rootDir": "src",
+    "paths": {
+      "@components/*": [ "components/*" ],
+      "@contexts/*": [ "contexts/*" ],
+      "@enums/*": [ "enums/*" ],
+      "@images/*": [ "img/*" ],
+      "@services/*": [ "services/*" ],
+      "@settings/*": [ "settings/*" ],
+      "@utils/*": [ "utils/*" ],
+      "@hooks/*": [ "hooks/*" ],
+      "@locales/*": [ "locales/*" ],
+      "@themes/*": [ "themes/*" ],
+      "@dtos/*": [ "models/dtos/*" ],
+      "@models/*": [ "models/*" ]
+    }
+  },
+  "include": [
+    "public",
+    "src"
+  ]
+}
