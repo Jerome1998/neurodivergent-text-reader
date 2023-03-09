@@ -14,7 +14,6 @@
   "extends": [
     "eslint:recommended",
     "plugin:react/recommended",
-    "plugin:cypress/recommended",
     "plugin:chai-friendly/recommended",
     "plugin:@typescript-eslint/recommended",
     "react-app"
@@ -32,7 +31,6 @@
     "import",
     "react",
     "react-hooks",
-    "cypress",
     "jest",
     "unused-imports",
     "deprecation",

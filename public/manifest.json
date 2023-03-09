@@ -1,17 +1,26 @@
 {
+  "$schema": "https://json.schemastore.org/chrome-manifest",
   "manifest_version": 3,
 
   "name": "Neurodivergent Text Reader",
   "description": "",
   "version": "1.0",
+  "permissions": [
+    "storage"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  
+  "action": {
+    "default_icon": {
+      "16": "icon.png"
+    },
+    "default_popup": "popup.html"
+  },
 
   "options_ui": {
     "page": "options.html"
-  },
-
-  "action": {
-    "default_icon": "icon.png",
-    "default_popup": "popup.html"
   },
 
   "content_scripts": [
@@ -23,13 +32,5 @@
 
   "background": {
     "service_worker": "js/background.js"
-  },
-
-  "permissions": [
-    "storage"
-  ],
-
-  "host_permissions": [
-    "<all_urls>"
-  ]
+  }
 }

@@ -6,7 +6,6 @@
       "dom.iterable",
       "esnext"
     ],
-    "typeRoots": [ "node_modules/@types" ],
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
@@ -18,7 +17,6 @@
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "noEmit": false,
     "jsx": "react-jsx",
     "sourceMap": false,
     "baseUrl": "src",
@@ -29,17 +27,10 @@
       "@enums/*": [ "enums/*" ],
       "@images/*": [ "img/*" ],
       "@services/*": [ "services/*" ],
-      "@settings/*": [ "settings/*" ],
-      "@utils/*": [ "utils/*" ],
       "@hooks/*": [ "hooks/*" ],
-      "@locales/*": [ "locales/*" ],
-      "@themes/*": [ "themes/*" ],
-      "@dtos/*": [ "models/dtos/*" ],
-      "@models/*": [ "models/*" ]
     }
   },
   "include": [
-    "public",
     "src"
   ]
 }

@@ -6,7 +6,7 @@ const Popup = () => {
   const [currentURL, setCurrentURL] = useState<string>();
 
   useEffect(() => {
-    chrome.action.setBadgeText({ text: count.toString() });
+    void chrome.action.setBadgeText({ text: count.toString() });
   }, [count]);
 
   useEffect(() => {
@@ -22,7 +22,7 @@ const Popup = () => {
         chrome.tabs.sendMessage(
           tab.id,
           {
-            color: "#555555",
+            color: "#555555"
           },
           (msg) => {
             console.log("result message:", msg);
